@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 53: invalid syntax
-    $ img
-     ^
+File "game/ch0.rpy", line 4: end of line expected.
+    text "序章" xalign 0.5 yalign 0.5
+              ^
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Mon Jan  3 12:54:57 2022
+Mon Jan  3 17:49:10 2022

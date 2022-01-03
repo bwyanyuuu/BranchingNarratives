@@ -1300,9 +1300,11 @@ screen nvl(dialogue, items=None):
 
     window:
         style "nvl_window"
-
+        top_padding 100
+        bottom_padding 100
         has vbox:
             spacing gui.nvl_spacing
+            
 
         ## Displays dialogue in either a vpgrid or the vbox.
         if gui.nvl_height:
@@ -1516,3 +1518,10 @@ style slider_vbox:
 style slider_slider:
     variant "small"
     xsize 600
+
+# user define
+transform halfleft:
+    xalign 0.25 yalign 1.0
+
+transform halfright:
+    xalign 0.75 yalign 1.0
