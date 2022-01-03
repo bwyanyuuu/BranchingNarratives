@@ -1,5 +1,13 @@
 
 label ch1_0:
+    # chapter transition
+    scene bg black with fade
+    centered "{size=+36}{font=temingti.ttf}第一章{/font}{/size}" with fade
+    scene bg black with fade
+
+    # start
+    scene bg example
+
     nvl_narrator "四周傳來了人的聲音。\n等到時空回溯帶來的暈眩感過去後，我睜開了雙眼。"
     nvl_narrator "兩旁是用木材簡單搭建起來的棚架，婦人牽著光著腳的孩子在攤販前對檯子上的水果挑挑揀揀，
     身穿毛皮衣的男人肩上扛著一隻滴著血的羔羊從我旁邊走過，還有三個醉漢躺在巷口喝酒大笑。"

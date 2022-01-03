@@ -40,19 +40,6 @@ label start:
             $ img_scoll = "side female1.png"
             $ college = "艾弗麗"
         "女":
-<<<<<<< Updated upstream
-            $ img0 = "female0.png"
-            $ img1 = "female1.png"
-
-    image user0 = "[img0]"
-    image user1 = "[img1]"
-
-    show user0
-
-    # u "You've created a new Ren'Py game."
-
-    # u "Once you add a story, pictures, and music, you can release it to the world!"
-=======
             $ img_usr = "female0.png"
             $ img_susr = "side female0.png"
             $ img_coll = "male1.png"
@@ -64,7 +51,6 @@ label start:
     image side user = "[img_susr]"
     image college = "[img_coll]"
     image side college = "[img_scoll]"
->>>>>>> Stashed changes
 
     jump ch0_0
 
