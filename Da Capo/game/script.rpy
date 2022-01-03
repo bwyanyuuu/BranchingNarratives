@@ -5,6 +5,8 @@ call ch0_0 from ch0
 
 define e = Character("Eileen")
 define u = Character("[username]")
+define q = Character("???")
+define c = Character("切羅")
 
 # user img
 default img0 = ""
@@ -40,8 +42,10 @@ label start:
 
     show user0
 
-    u "You've created a new Ren'Py game."
+    # u "You've created a new Ren'Py game."
 
-    u "Once you add a story, pictures, and music, you can release it to the world!"
+    # u "Once you add a story, pictures, and music, you can release it to the world!"
 
     jump ch0_0
+
+   

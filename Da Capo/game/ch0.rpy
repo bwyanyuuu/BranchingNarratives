@@ -1,3 +1,5 @@
+call ch1_0 from ch1
+
 label ch0_0:
     nvl_narrator "歐克里斯，我出生以來生活的世界。"
     nvl clear
@@ -12,4 +14,6 @@ label ch0_0:
     nvl_narrator "其中還出現了高智慧的魔物，它習得了人類的語言，還稱自己為「魔物之王」，並策畫了許多組織性的進攻，向人類宣戰，當時的人們對它甚是恐懼，所以給了它一個「迪弗爾(Devil)」的稱號。"
     nvl clear
 
-    return
+    
+    # return  ## return 是直接結束遊戲
+    jump ch1_0  #嘗試借跳ch1
