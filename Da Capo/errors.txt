@@ -2,17 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/ch0.rpy", line 65: expected statement.
-    <<<<<<< Updated upstream
-                            ^
-
-File "game/ch0.rpy", line 68: expected statement.
-    =======
-          ^
-
-File "game/ch0.rpy", line 85: expected statement.
-    >>>>>>> Stashed changes
-                           ^
+File "game/ch1.rpy", line 17: end of line expected.
+    scene fade with 3 second
+                      ^
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Mon Jan  3 18:05:32 2022
+Mon Jan  3 19:48:13 2022

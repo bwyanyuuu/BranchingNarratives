@@ -5,7 +5,7 @@ call ch0_0 from ch0
 # define chapter = Character(None, window_xalign=0.5, what_text_align=0.5,  text_xpos=0.5)
 define e = Character("Eileen")
 define q = Character("???")
-define c = Character("切羅")
+define c = Character("切羅", image = "cello")
 define u = Character("[username]", image = "user")
 define coll = Character("[college]", image = "college")
 
@@ -43,7 +43,7 @@ label start:
             $ img_usr = "female0.png"
             $ img_susr = "side female0.png"
             $ img_coll = "male1.png"
-            $ img_colls = "side male1.png"
+            $ img_scoll = "side male1.png"
             $ college = "艾弗利"
 
     # init after gender selected
@@ -51,6 +51,8 @@ label start:
     image side user = "[img_susr]"
     image college = "[img_coll]"
     image side college = "[img_scoll]"
+    image cello = "cello.jpg"
+    image side cello = "side cello.jpg"
 
     jump ch0_0
 

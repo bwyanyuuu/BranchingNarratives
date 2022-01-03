@@ -1,15 +1,15 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 30, in script
-    u "我的名字是 [username]!"
-Exception: DynamicImage u'[img_susr]': could not find image. (u'')
+  File "game/ch0.rpy", line 50, in script
+    coll "……\n 還真是一句多的話都沒有呢。"
+Exception: DynamicImage u'[img_scoll]': could not find image. (u'')
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 30, in script
-    u "我的名字是 [username]!"
+  File "game/ch0.rpy", line 50, in script
+    coll "……\n 還真是一句多的話都沒有呢。"
   File "renpy/ast.py", line 721, in execute
     renpy.exports.say(who, what, *args, **kwargs)
   File "renpy/exports.py", line 1419, in say
@@ -46,9 +46,9 @@ Full traceback:
     self.find_target()
   File "renpy/display/image.py", line 652, in find_target
     raise Exception(error)
-Exception: DynamicImage u'[img_susr]': could not find image. (u'')
+Exception: DynamicImage u'[img_scoll]': could not find image. (u'')
 
 Windows-10-10.0.19041
 Ren'Py 7.4.11.2266
 Da Capo 1.0
-Mon Jan  3 17:31:58 2022
+Mon Jan  3 19:20:59 2022

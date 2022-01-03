@@ -7,7 +7,7 @@ label ch0_0:
     scene bg black with fade
     
     # start
-    scene bg example
+    scene bg laboratory
 
     nvl_narrator "歐克里斯，我出生以來生活的世界。"
     nvl_narrator "這裡的一切均由「諾特」組成，它是目前大陸上發現到的最小基本粒子。"
@@ -47,7 +47,7 @@ label ch0_0:
     q "嘿！早啊，[username]！你今天來的真早。"
     "我聞聲抬起頭來，映入眼簾的是我在 Da Capo 研究組的前輩[college]。"
     u "嗯......，早安。"
-    coll "……\n還真是一句多的話都沒有呢。"
+    coll "……\n 還真是一句多的話都沒有呢。"
     "……[college]小聲地說了甚麼？\n不過他依舊如此朝氣蓬勃啊，雖然有點打擾到我了。"
 
     menu:        
