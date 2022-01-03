@@ -9,7 +9,8 @@ label ch2_0:
     scene bg otherworld
     u "這裡就是康切爾托啊……"
     while True:
-        "我環顧四周，自己正置身於一片無際的荒野。挾帶砂石的風無差別的拍打在荒原上的所有事物上。這裡沒有樹木，唯一的綠意來自一簇一簇匍匐在地、接近枯萎的雜草，一些大小不一的{a=jump:stone}石塊{/a}散落其間，從手掌大小到半人高都有，{a=jump:surface}表面粗糙且凹凸不平{/a}。所有的景物都因為來自{a=jump:sky}天空{/a}光線的反射，泛著妖異的紅。"
+        nvl_narrator "我環顧四周，自己正置身於一片無際的荒野。挾帶砂石的風無差別的拍打在荒原上的所有事物上。這裡沒有樹木，唯一的綠意來自一簇一簇匍匐在地、接近枯萎的雜草，一些大小不一的{a=jump:stone}{color=#ffffff}石塊{/color}{/a}散落其間，從手掌大小到半人高都有，{a=jump:surface}{color=#ffffff}表面粗糙且凹凸不平{/color}{/a}。所有的景物都因為來自{a=jump:sky}{color=#ffffff}天空{/color}{/a}光線的反射，泛著妖異的紅。"
+        nvl clear
 
     
 label stone:
