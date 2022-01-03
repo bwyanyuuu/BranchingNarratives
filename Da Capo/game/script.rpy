@@ -1,10 +1,10 @@
 ﻿# The script of the game goes in this file.
-
+call ch0_0 from ch0
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
 define e = Character("Eileen")
-define m = Character("主角")
+define u = Character("主角")
 
 
 # The game starts here.
@@ -21,7 +21,7 @@ label start:
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
-    show eileen happy
+    show example1
 
     # These display lines of dialogue.
 
@@ -31,6 +31,4 @@ label start:
 
     e "Once you add a story, pictures, and music, you can release it to the world!"
 
-    # This ends the game.
-
-    return
+    jump ch0_0
