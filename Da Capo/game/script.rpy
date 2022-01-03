@@ -4,31 +4,44 @@ call ch0_0 from ch0
 # name of the character.
 
 define e = Character("Eileen")
-define u = Character("主角")
+define u = Character("[username]")
 
+# user img
+default img0 = ""
+default img1 = ""
 
 # The game starts here.
-
 label start:
+    scene bg_example
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
+    # username
+    python:
+        username = renpy.input("你的名字是什麼？", length=32)
+        username = username.strip()
 
-    scene bg room
+        while not username:
+            username = renpy.input("麻煩請輸入你的名字！", length=32)
+            username = username.strip()
 
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
+    u "我的名字是 [username]!"
 
-    show example1
+    # select gender
+    menu gender:
+        "請問您的性別是？"
+        "男":
+            $ img0 = "male0.png"
+            $ img1 = "male1.png"
+        "女":
+            $ img0 = "female0.png"
+            $ img1 = "female1.png"
 
-    # These display lines of dialogue.
+    image user0 = "[img0]"
+    image user1 = "[img1]"
 
-    e "你好 \n哈哈哈哈"
+    show user0
 
-    e "You've created a new Ren'Py game."
+    u "You've created a new Ren'Py game."
 
-    e "Once you add a story, pictures, and music, you can release it to the world!"
+    u "Once you add a story, pictures, and music, you can release it to the world!"
 
     jump ch0_0
