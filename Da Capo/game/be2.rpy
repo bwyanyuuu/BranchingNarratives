@@ -1,5 +1,5 @@
 
-label be1_0:
+label be2_0:
     # chapter transition
     scene bg black with fade
     show text "{size=+36}{font=temingti.ttf}BAD END{/font}{/size}" at truecenter with fade

@@ -1,9 +1,10 @@
-
+call ch3_0 from ch3
 label ch2_0:
     # chapter transition
     scene bg black with fade
-    centered "{size=+36}{font=temingti.ttf}第二章{/font}{/size}" with fade
-    scene bg black with fade
+    show text "{size=+36}{font=temingti.ttf}第二章{/font}{/size}" at truecenter with fade
+    pause 1.0
+    scene bg black with Dissolve(0.5)
 
     # start
     scene bg otherworld
@@ -15,17 +16,20 @@ label ch2_0:
     
 label stone:
     "我撿起地上一塊稍微小一點的石頭，試圖解析它的諾特組成，但被石塊銳利的邊緣劃傷了掌心。"
-    return
+    jump ch2_1
 
 
 label surface:
     "我直直盯著身旁一個與視線齊平的巨大石塊。"
-    return
+    jump ch2_1
 
 label sky:
     "我抬頭仔細地觀察這片天空。"
     "沒有雲朵與樹蔭的遮蔽，如同剛流出的鮮血一般的紅色天空壓迫著我的視覺迴路，彷彿再多看一秒就會將雙眼灼傷。"
-    return
+    jump ch2_1
+
+label ch2_1:
+    jump ch3_0
 
     
 

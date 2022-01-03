@@ -3,16 +3,17 @@ call ch1_0 from ch1
 label ch0_0:
     # chapter transition
     scene bg black with fade
-    centered "{size=+36}{font=temingti.ttf}序章{/font}{/size}" with fade
-    scene bg black with fade
+    show text "{size=+36}{font=temingti.ttf}序章{/font}{/size}" at truecenter with fade
+    pause 1.0
+    scene bg black with Dissolve(0.5)
     
     # start
     scene bg laboratory
 
     nvl_narrator "歐克里斯，我出生以來生活的世界。"
     nvl_narrator "這裡的一切均由「諾特」組成，它是目前大陸上發現到的最小基本粒子。"
-    nvl_narrator "它組成了水、火、土、風等元素，這些元素又進一步組合而成為這世界中所有的自然造物。
-有極大多數的人擁有操控諾特的能力，若將它依特定順序及位置排列後，就可以生成相對應的自然造物與魔法，這就是釋放魔法的途徑。"
+    nvl_narrator "它組成了水、火、土、風等元素，這些元素又進一步組合而成為這世界中所有的自然造物。"
+    nvl_narrator "有極大多數的人擁有操控諾特的能力，若將它依特定順序及位置排列後，就可以生成相對應的自然造物與魔法，這就是釋放魔法的途徑。"
     nvl clear
     nvl_narrator "雖然我們具有操縱魔法的能力，但這裡卻有一種生物，我們稱之為「魔物」，它擁有強大的魔力與侵略性，並以人類為食。"
     nvl_narrator "它們在很久很久以前便出現了，那時的人們為了抵禦它們的侵略，開始建立城邦、利用魔法與武器來與之抗衡。"

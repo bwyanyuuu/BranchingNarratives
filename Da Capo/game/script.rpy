@@ -3,11 +3,16 @@ call ch0_0 from ch0
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 # define chapter = Character(None, window_xalign=0.5, what_text_align=0.5,  text_xpos=0.5)
-define e = Character("Eileen")
+
 define q = Character("???")
-define c = Character("切羅", image = "cello")
 define u = Character("[username]", image = "user")
 define coll = Character("[college]", image = "college")
+define c = Character("切羅", image = "cello")
+define shm = Character("雙胞胎男")
+define shf = Character("雙胞胎女")
+define n = Character("尼爾")
+define s = Character("桑杰斯")
+
 
 # user define variables
 default img_usr = ""
