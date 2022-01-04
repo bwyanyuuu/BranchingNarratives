@@ -24,6 +24,8 @@ label ch2_0:
 label choose:
     while True:
         nvl clear
+        if stone_cnt > 0 and surface_cnt > 0 and sky_cnt > 0 and heal_cnt > 0:
+            jump ch2_1
         nvl_narrator "我環顧四周，自己正置身於一片無際的荒野。挾帶砂石的風無差別的拍打在荒原上的所有事物上。這裡沒有樹木，唯一的綠意來自一簇一簇匍匐在地、接近枯萎的雜草，一些大小不一的{a=jump:stone}{color=#ffffff}石塊{/color}{/a}散落其間，從手掌大小到半人高都有，{a=jump:surface}{color=#ffffff}表面粗糙且凹凸不平{/color}{/a}。所有的景物都因為來自{a=jump:sky}{color=#ffffff}天空{/color}{/a}光線的反射，泛著妖異的紅。"
         
 
@@ -49,7 +51,7 @@ label stone:
     else:
         "不久前的恐怖經歷讓我不敢再觸碰這些石塊。"
         "但是剛剛釋放的{a=jump:heal}{color=#ffffff}治療術{/color}{/a}似乎和平常不一樣，必須正視這一點。"
-        jump ch2_1
+        jump choose
 
 
 label surface:
@@ -105,7 +107,7 @@ label sky:
         jump choose
     else:
         "我不適的移開視線。"
-        jump ch2_1
+        jump choose
 
 
 label heal:
@@ -118,10 +120,9 @@ label heal:
     "魔法的釋放過程和平常一樣順利，但在完成諾特的排列後，另一個石塊再次發出刺耳的聲音並憑空消失。"
     u "不管釋放什麼魔法，最後都會變成時間回溯嗎……糟糕，隨便使用魔法的話，後果可能不堪設想啊……"
     u "一個用不了魔法的魔法師，根本就是一個廢人吧。"
-    jump ch2_1
+    jump choose
 
 label ch2_1:
-    nvl clear
     "此時地面傳來震動，而且在我反應過來之前迅速轉為劇烈的搖晃，看著擁有嶄新斷面的巨大石塊，我馬上明白接下來即將發生什麼事。"
     u "要在魔物抵達之前藏起來。\n妨礙認知的魔法……可惡，不能用魔法！"
     "情急之下，我只能躲到一個巨大石塊邊，它有明顯的風蝕痕跡，應該不是那個龐然大物的主要活動範圍。"
