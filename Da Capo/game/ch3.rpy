@@ -1,4 +1,5 @@
 call be2_0 from be2
+call ch4_0 from ch4
 label ch3_0:
     # chapter transition
     scene bg black with fade
@@ -120,7 +121,7 @@ label ch3_0:
             "我在火光襲來之時，用魔法點燃了我的斗篷，並將它燃的非常旺盛。\n然後在他們看來我被困在一片火海中的時候，我用最快的速度發動了 Da Capo 回到元年前一天，而現場只會剩下一團灰燼。"
             u "......再見了。"
 
-    return
+    jump ch4_0
 
     
 
