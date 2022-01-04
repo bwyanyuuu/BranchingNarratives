@@ -1,22 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/ch1.rpy", line 32, in script
-    q_c "......你覺得這幅景象很美嗎？"
-Exception: Sayer 'q_c' is not defined.
+  File "game/ch1.rpy", line 69, in script
+    show cello eye with flashblub
+  File "game/ch1.rpy", line 69, in <module>
+    show cello eye with flashblub
+NameError: name 'flashblub' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/ch1.rpy", line 32, in script
-    q_c "......你覺得這幅景象很美嗎？"
-  File "renpy/ast.py", line 681, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "renpy/ast.py", line 574, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'q_c' is not defined.
+  File "game/ch1.rpy", line 69, in script
+    show cello eye with flashblub
+  File "renpy/ast.py", line 1439, in execute
+    paired = renpy.python.py_eval(self.paired)
+  File "renpy/python.py", line 2276, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "renpy/python.py", line 2269, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/ch1.rpy", line 69, in <module>
+    show cello eye with flashblub
+NameError: name 'flashblub' is not defined
 
 Windows-10-10.0.19041
 Ren'Py 7.4.11.2266
 Da Capo 1.0
-Tue Jan  4 16:14:07 2022
+Tue Jan  4 21:28:06 2022

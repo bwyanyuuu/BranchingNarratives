@@ -14,7 +14,10 @@ define shf = Character("雙胞胎女")
 define n = Character("尼爾")
 define s = Character("桑杰斯")
 
-
+# images
+image cello = "cello.png"
+image side cello = "side cello.png"
+image hand = "hand injury.jpg"
 
 # user define variables
 default img_usr = ""
@@ -58,9 +61,7 @@ label start:
     image side user = "[img_susr]"
     image college = "[img_coll]"
     image side college = "[img_scoll]"
-    image cello = "cello.jpg"
-    image side cello = "side cello.jpg"
-    image hand = "hand injury.jpg"
+    
 
     jump ch0_0
 
