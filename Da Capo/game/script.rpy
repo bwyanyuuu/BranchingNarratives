@@ -4,7 +4,8 @@ call ch0_0 from ch0
 # name of the character.
 # define chapter = Character(None, window_xalign=0.5, what_text_align=0.5,  text_xpos=0.5)
 
-define q = Character("???")
+define q = Character("???")     #第二章不知名魔物
+define qc = Character("???")   #第一章切羅出登場
 define u = Character("[username]", image = "user")
 define coll = Character("[college]", image = "college")
 define c = Character("切羅", image = "cello")
@@ -12,6 +13,7 @@ define shm = Character("雙胞胎男")
 define shf = Character("雙胞胎女")
 define n = Character("尼爾")
 define s = Character("桑杰斯")
+
 
 
 # user define variables
@@ -58,6 +60,7 @@ label start:
     image side college = "[img_scoll]"
     image cello = "cello.jpg"
     image side cello = "side cello.jpg"
+    image hand = "hand injury.jpg"
 
     jump ch0_0
 

@@ -1,101 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-<<<<<<< Updated upstream
-While processing text tag {a=jump:stone} in u'\u6211\u74b0\u9867\u56db\u5468\uff0c\u81ea\u5df1\u6b63\u7f6e\u8eab\u65bc\u4e00\u7247\u7121\u969b\u7684\u8352\u91ce\u3002\u633e\u5e36\u7802\u77f3\u7684\u98a8\u7121\u5dee\u5225\u7684\u62cd\u6253\u5728\u8352\u539f\u4e0a\u7684\u6240\u6709\u4e8b\u7269\u4e0a\u3002\u9019\u88e1\u6c92\u6709\u6a39\u6728\uff0c\u552f\u4e00\u7684\u7da0\u610f\u4f86\u81ea\u4e00\u7c07\u4e00\u7c07\u530d\u5310\u5728\u5730\u3001\u63a5\u8fd1\u67af\u840e\u7684\u96dc\u8349\uff0c\u4e00\u4e9b\u5927\u5c0f\u4e0d\u4e00\u7684{a=jump:stone}\u77f3\u584a{/a}\u6563\u843d\u5176\u9593\uff0c\u5f9e\u624b\u638c\u5927\u5c0f\u5230\u534a\u4eba\u9ad8\u90fd\u6709\uff0c{a=jump:surface}\u8868\u9762\u7c97\u7cd9\u4e14\u51f9\u51f8\u4e0d\u5e73{/a}\u3002\u6240\u6709\u7684\u666f\u7269\u90fd\u56e0\u70ba\u4f86\u81ea{a=jump:sky}\u5929\u7a7a{/a}\u5149\u7dda\u7684\u53cd\u5c04\uff0c\u6cdb\u8457\u5996\u7570\u7684\u7d05\u3002'.:
-  File "game/ch2.rpy", line 56, in script
-    "我環顧四周，自己正置身於一片無際的荒野。挾帶砂石的風無差別的拍打在荒原上的所有事物上。這裡沒有樹木，唯一的綠意來自一簇一簇匍匐在地、接近枯萎的雜草，一些大小不一的{a=jump:stone}石塊{/a}散落其間，從手掌大小到半人高都有，{a=jump:surface}表面粗糙且凹凸不平{/a}。所有的景物都因為來自{a=jump:sky}天空{/a}光線的反射，泛著妖異的紅。"
-  File "game/ch2.rpy", line 31, in hyperlink_styler
-    return style.lexicon
-Exception: Style 'lexicon' does not exist.
-=======
 While running game code:
-  File "game/ch0.rpy", line 7, in script
-    with dissolve(0.5)
-TypeError: 'Dissolve' object is not callable
->>>>>>> Stashed changes
+  File "game/ch1.rpy", line 32, in script
+    q_c "......你覺得這幅景象很美嗎？"
+Exception: Sayer 'q_c' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-<<<<<<< Updated upstream
-  File "game/ch2.rpy", line 56, in script
-    "我環顧四周，自己正置身於一片無際的荒野。挾帶砂石的風無差別的拍打在荒原上的所有事物上。這裡沒有樹木，唯一的綠意來自一簇一簇匍匐在地、接近枯萎的雜草，一些大小不一的{a=jump:stone}石塊{/a}散落其間，從手掌大小到半人高都有，{a=jump:surface}表面粗糙且凹凸不平{/a}。所有的景物都因為來自{a=jump:sky}天空{/a}光線的反射，泛著妖異的紅。"
-  File "renpy/ast.py", line 721, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "renpy/exports.py", line 1419, in say
-    who(what, *args, **kwargs)
-  File "renpy/character.py", line 1249, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
-  File "renpy/character.py", line 901, in do_display
-    **display_args)
-  File "renpy/character.py", line 647, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "renpy/ui.py", line 298, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "renpy/display/core.py", line 3325, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
-  File "renpy/display/core.py", line 3839, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "renpy/display/core.py", line 2565, in draw_screen
-    renpy.config.screen_height,
-  File "render.pyx", line 492, in renpy.display.render.render_screen
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "renpy/display/layout.py", line 826, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "renpy/display/layout.py", line 826, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "renpy/display/layout.py", line 826, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "renpy/display/screen.py", line 688, in render
-    child = renpy.display.render.render(self.child, w, h, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "renpy/display/layout.py", line 826, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "renpy/display/layout.py", line 1264, in render
-    st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "renpy/text/text.py", line 2096, in render
-    virtual_layout = Layout(self, width, height, renders, drawable_res=False, size_only=True)
-  File "renpy/text/text.py", line 610, in __init__
-    self.paragraphs = self.segment(text.tokens, style, renders, text)
-  File "renpy/text/text.py", line 1101, in segment
-    hls = hyperlink_styler(value)
-  File "game/ch2.rpy", line 31, in hyperlink_styler
-    return style.lexicon
-  File "style.pyx", line 216, in renpy.style.StyleManager.__getattr__
-  File "style.pyx", line 83, in renpy.style.get_style
-Exception: Style 'lexicon' does not exist.
-=======
-  File "game/ch0.rpy", line 7, in script
-    with dissolve(0.5)
-  File "renpy/ast.py", line 1443, in execute
-    renpy.exports.with_statement(trans, paired)
-  File "renpy/exports.py", line 1684, in with_statement
-    return renpy.game.interface.do_with(trans, paired, clear=clear)
-  File "renpy/display/core.py", line 2762, in do_with
-    clear=clear)
-  File "renpy/display/core.py", line 3325, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
-  File "renpy/display/core.py", line 3676, in interact_core
-    new_widget=layers_root)
-TypeError: 'Dissolve' object is not callable
->>>>>>> Stashed changes
+  File "game/ch1.rpy", line 32, in script
+    q_c "......你覺得這幅景象很美嗎？"
+  File "renpy/ast.py", line 681, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "renpy/ast.py", line 574, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'q_c' is not defined.
 
 Windows-10-10.0.19041
 Ren'Py 7.4.11.2266
 Da Capo 1.0
-<<<<<<< Updated upstream
-Mon Jan  3 22:16:29 2022
-=======
-Mon Jan  3 23:19:01 2022
->>>>>>> Stashed changes
+Tue Jan  4 16:14:07 2022

@@ -8,7 +8,7 @@ label ch1_0:
     scene bg black with Dissolve(0.5)
 
     # start
-    scene bg market
+    scene bg market with fade
 
     nvl_narrator "四周傳來了人的聲音。\n等到時空回溯帶來的暈眩感過去後，我睜開了雙眼。"
     nvl_narrator "兩旁是用木材簡單搭建起來的棚架，婦人牽著光著腳的孩子在攤販前對檯子上的水果挑挑揀揀，
@@ -16,8 +16,8 @@ label ch1_0:
     nvl_narrator "似乎是回溯到了一個市集的正中間，身旁人來人往，攤販老闆吆喝叫賣向人們推銷自家的商品，
     群眾的目光也放在老闆手中的貨品，所幸沒有人注意到突然出現在人群之中的我。"
 
-    scene dissolve
-    scene bg street
+    # scene dissolve
+    scene bg street with fade
 
     nvl_narrator "我盡量壓低身形，穿過人群的包圍來到一旁無人的暗巷內。"
     nvl clear
@@ -29,7 +29,7 @@ label ch1_0:
     "人們交流的方式、使用的貨幣、衣服的穿著以及日常吃的食物，比起書上記錄的知識，眼前的光景才是這個過去的真實。"
     "我就是為了一窺真實的歷史才參加了這次時空回溯。"
 
-    q "......你覺得這幅景象很美嗎？"
+    qc "......你覺得這幅景象很美嗎？"
     u "誰！？"
     show cello
     c "恩......我想你可以稱呼我為切羅。"
