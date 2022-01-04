@@ -17,6 +17,7 @@ define s = Character("桑杰斯")
 # images
 image cello = "cello.png"
 image side cello = "side cello.png"
+image side cello eye = "side cello eye.png"
 image hand = "hand injury.png"
 
 # user define variables
@@ -27,7 +28,7 @@ default img_scoll = ""
 
 # The game starts here.
 label start:
-    scene bg example
+    scene bg star
 
     # username
     python:
