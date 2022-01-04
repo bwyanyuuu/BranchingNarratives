@@ -17,7 +17,7 @@ define s = Character("桑杰斯")
 # images
 image cello = "cello.png"
 image side cello = "side cello.png"
-image hand = "hand injury.jpg"
+image hand = "hand injury.png"
 
 # user define variables
 default img_usr = ""
