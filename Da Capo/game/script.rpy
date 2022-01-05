@@ -13,9 +13,9 @@ define shm = Character("雙胞胎男", image = "shm")
 define shf = Character("雙胞胎女", image = "shf")
 define n = Character("尼爾")
 define s = Character("桑杰斯")
+define m = Character("???", image = "mowu")
 
 # images
-image cello = "cello.png"
 image hand = "hand injury.png"
 
 # side images
