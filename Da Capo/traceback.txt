@@ -1,28 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/be1.rpy", line 27, in script
-    with Shake((0, 0, 0, 0), 3.0, dist=30)
-  File "game/be1.rpy", line 27, in <module>
-    with Shake((0, 0, 0, 0), 3.0, dist=30)
-NameError: name 'Shake' is not defined
+  File "game/ch0.rpy", line 13, in script
+    nvl_narrator "{a=http://139.162.117.77/mediawiki/index.php/%E6%AD%90%E5%85%8B%E9%87%8C%E6%96%AF%E5%A4%A7%E9%99%B8}歐克里斯{/a}，我出生以來生活的世界。"
+TypeError: a float is required
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/be1.rpy", line 27, in script
-    with Shake((0, 0, 0, 0), 3.0, dist=30)
-  File "renpy/ast.py", line 1436, in execute
-    trans = renpy.python.py_eval(self.expr)
-  File "renpy/python.py", line 2276, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "renpy/python.py", line 2269, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/be1.rpy", line 27, in <module>
-    with Shake((0, 0, 0, 0), 3.0, dist=30)
-NameError: name 'Shake' is not defined
+  File "game/ch0.rpy", line 13, in script
+    nvl_narrator "{a=http://139.162.117.77/mediawiki/index.php/%E6%AD%90%E5%85%8B%E9%87%8C%E6%96%AF%E5%A4%A7%E9%99%B8}歐克里斯{/a}，我出生以來生活的世界。"
+  File "renpy/ast.py", line 721, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "renpy/exports.py", line 1408, in say
+    what = what % tag_quoting_dict
+TypeError: a float is required
 
 Windows-10-10.0.19041
 Ren'Py 7.4.11.2266
 Da Capo 1.0
-Tue Jan  4 23:21:15 2022
+Wed Jan  5 10:49:41 2022
