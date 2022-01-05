@@ -16,6 +16,7 @@ label ch2_0:
 
     # start
     scene bg otherworld with fade
+    "觸目便是一片鮮紅，我愣了一下才意識到這鮮豔的顏色來自頭頂的天空。"
     u "這裡就是康切爾托啊……"
 
     jump choose
