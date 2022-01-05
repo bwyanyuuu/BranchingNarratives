@@ -1521,7 +1521,7 @@ style slider_slider:
 
 # user define
 transform halfleft:
-    xalign 0.25 yalign 1.0
+    xalign 0.10 yalign 1.0
 
 transform halfright:
-    xalign 0.75 yalign 1.0
+    xalign 0.90 yalign 1.0

@@ -44,7 +44,7 @@ label ch0_0:
     nvl_narrator "而時至今日，謎團依舊沒有解開......"
     nvl clear
     
-    show college
+    show college with dissolve
     q "嘿！早啊，[username]！你今天來的真早。"
     "我聞聲抬起頭來，映入眼簾的是我在 Da Capo 研究組的前輩[college]。"
     u "嗯......，早安。" 

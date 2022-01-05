@@ -9,16 +9,20 @@ define qc = Character("???")   #第一章切羅出登場
 define u = Character("[username]", image = "user")
 define coll = Character("[college]", image = "college")
 define c = Character("切羅", image = "cello")
-define shm = Character("雙胞胎男")
-define shf = Character("雙胞胎女")
+define shm = Character("雙胞胎男", image = "shm")
+define shf = Character("雙胞胎女", image = "shf")
 define n = Character("尼爾")
 define s = Character("桑杰斯")
 
 # images
 image cello = "cello.png"
-image side cello = "side cello.png"
-image side cello eye = "side cello eye.png"
 image hand = "hand injury.png"
+
+# side images
+# image side cello = "side cello.png"
+# image side cello eye = "side cello eye.png"
+# image side shm = "side shm.png"
+# image side shf = "side shf.png"
 
 # user define variables
 default img_usr = ""
