@@ -8,7 +8,7 @@ label ch3_0:
     scene bg black with Dissolve(0.5)
 
     # start
-    scene bg grass with fade
+    scene bg grass with dissolve
 
     "頭頂的艷陽太熱烈，刺的我睜不開眼，但是風輕輕拂過，倒是將太陽的溫存帶走的一點都不剩。\n過了一陣適應之後，我才緩緩張開眼睛。"
     u "我回來了啊，歐克里斯......。"
@@ -88,7 +88,11 @@ label ch3_0:
     "忽然一個腳軟，我跌坐在了地上，沒想到小小一個法陣消耗的魔力竟然這麼多。\n這次只不過是消除了一個匕首，要是要消除一個生物不知道要花多少心思呢......。"
     u "......看來得好好修練修練了。"
 
-    scene bg palace1 with fade
+    scene bg black with fade
+    show text "{size=+24}{font=temingti.ttf}3年後{/font}{/size}" at truecenter with fade
+    pause 1.0
+    scene bg black with Dissolve(0.5)
+    scene bg palace1 with dissolve
     # @??? (路人冒險者A)
     q "真是沒想到魔物又開始蠢蠢欲動了，明明好不容易消停了幾十年。"
     # @??? (路人冒險者B)
@@ -100,6 +104,10 @@ label ch3_0:
     n "總之等一下進入地宮，要小心各處可能隱藏起來的魔物發動偷襲。"
     s "那是當然。"
 
+    scene bg black with fade
+    show text "{size=+24}{font=temingti.ttf}50年後{/font}{/size}" at truecenter with fade
+    pause 1.0
+    scene bg black with Dissolve(0.5)
     scene bg palace2 with fade
     "自我回到歐克里斯，大概也有 50 年??了。"
     "因為每次進行消除需要的魔力太多了，雖然這些年來有持續在努力，但是我也只將大部分的高階魔物消除了。\n雖然歐克里斯的異象發生的頻率有下降，但他們還是存在，所以我還有太多太多需要去努力的了。"
