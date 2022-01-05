@@ -2,8 +2,8 @@ call be2_0 from be2
 call ch4_0 from ch4
 label ch3_0:
     # chapter transition
-    scene bg black with fade
-    show text "{size=+36}{font=temingti.ttf}第三章{/font}{/size}" at truecenter with fade
+    scene bg black with dissolve
+    show text "{size=+36}{font=temingti.ttf}第三章{/font}{/size}" at truecenter with dissolve
     pause 1.0
     scene bg black with Dissolve(0.5)
 
@@ -16,7 +16,7 @@ label ch3_0:
     "我的眼光隨著小兔看去，匆匆瞥見草原另一端的森林裡，好似有魔力的流動。\n我站起來，活動活動我那感覺有點生鏽的雙腳，向森林的方向走去。"
     u "現在不知道是甚麼年代了，先去前面探探究竟吧......。"
 
-    scene bg forest with fade
+    scene bg forest with dissolve
     "走到森林的邊陲時，傳來一陣嘶吼與兵器相接的聲音。\n我感受到了強烈且是在康切爾托感受到過的魔力波動。"
     u "難道是魔物......？"
     "我趕忙向前跑去，忽然一道藍色魔法波打到我面前，我側身一閃躲了過去，前方的地上猛地出現一道焦痕。" with vpunch
@@ -56,7 +56,7 @@ label ch3_0:
     shf "但他所用的魔法雖然看起來和我們平時所見的差不多，但所造成的效果可是完全沒有見過的！\n能讓物體直接消失的魔法......，威力可不是我們這個水平可以匹敵的。"
     shm "的確是有點古怪了。\n不過他救了我們，應該也不是什麼壞人吧......。\n總之還是多虧他了，心存感激吧！"
 
-    scene bg market with fade
+    scene bg market with dissolve
     "我慌忙地跑了出來，毫無目的的亂走，因為心裡在思考著剛剛那個奇怪的一幕。"
     "仔細想想，那魔法確實在那一個剎那間，我就對他失去了控制力。\n手部的消失也是很不正常，看來我的猜想或許是正確的。"
     u "看來要採取一些行動了......。"
@@ -88,8 +88,8 @@ label ch3_0:
     "忽然一個腳軟，我跌坐在了地上，沒想到小小一個法陣消耗的魔力竟然這麼多。\n這次只不過是消除了一個匕首，要是要消除一個生物不知道要花多少心思呢......。"
     u "......看來得好好修練修練了。"
 
-    scene bg black with fade
-    show text "{size=+24}{font=temingti.ttf}3年後{/font}{/size}" at truecenter with fade
+    scene bg black with dissolve
+    show text "{size=+24}{font=temingti.ttf}1年後{/font}{/size}" at truecenter with dissolve
     pause 1.0
     scene bg black with Dissolve(0.5)
     scene bg palace1 with dissolve
@@ -104,11 +104,12 @@ label ch3_0:
     n "總之等一下進入地宮，要小心各處可能隱藏起來的魔物發動偷襲。"
     s "那是當然。"
 
-    scene bg black with fade
-    show text "{size=+24}{font=temingti.ttf}50年後{/font}{/size}" at truecenter with fade
+    scene bg black with dissolve
+    show text "{size=+24}{font=temingti.ttf}多年後{/font}{/size}" at truecenter with dissolve
     pause 1.0
     scene bg black with Dissolve(0.5)
     scene bg palace2 with fade
+    scene bg palace2 with dissolve
     "自我回到歐克里斯，大概也有20多年了。"
     "因為每次進行消除需要的魔力太多了，雖然這些年來有持續在努力，但是我也只將大部分的高階魔物消除了。\n雖然歐克里斯的異象發生的頻率有下降，但他們還是存在，所以我還有太多太多需要去努力的了。"
     u "再這樣下去也是治標不治本......。"

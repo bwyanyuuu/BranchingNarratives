@@ -1,13 +1,13 @@
 call ch5_0 from ch5
 label ch4_0:
     # chapter transition
-    scene bg black with fade
-    show text "{size=+36}{font=temingti.ttf}第四章{/font}{/size}" at truecenter with fade
+    scene bg black with dissolve
+    show text "{size=+36}{font=temingti.ttf}第四章{/font}{/size}" at truecenter with dissolve
     pause 1.0
     scene bg black with Dissolve(0.5)
 
     # start
-    scene bg forest with fade
+    scene bg forest with dissolve
     nvl_narrator "元年前的世界是混沌的。\n抓狂的氣候、隨時會碎裂的大地以及風暴般肆虐的諾特旋風。\n上一秒還是晴朗的天氣，下一秒暴風將太陽吞噬，藍天被蒙上一層灰。"
     nvl_narrator "人們無力抵抗世界的力量，可能下一瞬間就是自己的死期。\n直到某一天，人們發現世界穩定下來，氣候開始正常運轉，出現了春夏秋冬四季，因極端氣候而寸草不生的大地長出了新生的枝枒，躁動的諾特也穩定下來。"
     nvl_narrator "世界呈現出欣欣向榮的氣象。\n人們再也不用擔心會死於突如其來的災害，存活下來的人們稱呼這個奇蹟似的一年為「元年」。"
@@ -70,7 +70,7 @@ label ch4_1:
     u "———找到了！"
     "洞穴的深處有著一個無法被感知到的空間，魔法延伸到那邊就被中斷了。\n找到目標後我直接中止探知魔法，顧不得強制收回大量諾特造成的反噬，我快速的往洞穴深處走去。"
     u "這是——！？"
-    scene bg cave in with fade
+    scene bg cave in with dissolve
     "從狹窄的石道中走出來後，洞穴的深處是一個巨大的空洞。"
     "我放了一個發光魔法，想探查這個巨大空間的樣貌。\n但是光源飛到正中間時，就被黑暗吞沒。"
     "我試著收回魔法，但是並沒有任何反應。\n再次使出發光魔法，這次讓它留在我的頭頂上頭照亮前方的路，我小心翼翼地往中央走去。"
@@ -90,14 +90,14 @@ label ch4_1:
             jump ch5_0
         "還不能確定假設可行性，之後再想辦法，總之現在先從洞穴逃離":
             u "不行！還不能完全確定那個裡面的狀況，貿然進去太危險了，先離開這個洞穴之後再找別的世界的漏洞就行。"
-            scene bg cave out with fade
+            scene bg cave out with dissolve
             "我急急忙忙地離開大空洞，快速跑過剛剛穿過的石道，回到洞穴的入口處。\n洞穴搖晃得越來越激烈了，還要再快一點才行！"with vpunch
             u "......騙人的吧。"
             "在我面前，通往外面的出口被一塊巨大的石頭堵住。"
             u "可惡，現在還來的及——！！"
             "在我準備施放攻擊魔法打破巨石時，洞穴崩塌了。\n最後映入我眼裡的是無數的碎石砸下來。"
-            scene bg black with fade
-            show text "{size=+36}{font=temingti.ttf}BAD END{/font}{/size}" at truecenter with fade
+            scene bg black with dissolve
+            show text "{size=+36}{font=temingti.ttf}BAD END{/font}{/size}" at truecenter with dissolve
             pause 1.0
             scene bg black with Dissolve(0.5)
 

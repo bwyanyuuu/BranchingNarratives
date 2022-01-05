@@ -1,13 +1,6 @@
 
 label be1_0:
     # chapter transition
-    scene bg black with fade
-    show text "{size=+36}{font=temingti.ttf}結局 《錯用正義》{/font}{/size}" at truecenter with fade
-    pause 1.0
-    scene bg black with Dissolve(0.5)
-
-    scene bg street
-    show cello
     "錯不了的，在歷史上迪弗爾最明顯就是它那詭異的第三隻眼睛，充滿著混沌與黑暗。"
     "我既然都時間回溯到了這裡，還遇上了迪弗爾，我就不能放著之後會發生的大屠殺不管。"
     u "你停下吧！屠殺這裡的人對你有什麼好處。"
@@ -31,7 +24,7 @@ label be1_0:
     u "終於將你打敗了......！"
     c eye "你...把我殺了...也...改變...不了這一切的......。"
     
-    scene bg black with fade
+    scene bg black with dissolve
     with Move((0, 10), (0, -10), .10, bounce=True, repeat=True, delay=2.0)
     
     "就在迪弗爾斷氣的那一刻，我眼前的世界開始分裂成一個個小碎片，一點點的消失。\n而我也控制不了我的身體，四肢慢慢散落、消逝......，眼前的黑暗逐漸吞噬我。"
@@ -39,8 +32,8 @@ label be1_0:
     "改變歷史本身就是大錯特錯的......，改變了歷史上的重大事件，造成我來自的那個未來被傾覆，存在上出現嚴重的矛盾。"
     "......\n或許是這樣吧？在被完全吞噬前的那一刻，我這麼想著......。"
 
-    scene bg black with fade
-    show text "{size=+36}{font=temingti.ttf}Game Over{/font}{/size}" at truecenter with fade
+    scene bg black with dissolve
+    show text "{size=+30}{font=temingti.ttf}BAB END - 錯用正義{/font}{/size}" at truecenter with dissolve
     pause 1.0
     scene bg black with Dissolve(0.5)
 

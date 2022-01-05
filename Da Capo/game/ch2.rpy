@@ -9,13 +9,13 @@ default heal_cnt = 0
 
 label ch2_0:
     # chapter transition
-    scene bg black with fade
-    show text "{size=+36}{font=temingti.ttf}第二章{/font}{/size}" at truecenter with fade
+    scene bg black with dissolve
+    show text "{size=+36}{font=temingti.ttf}第二章{/font}{/size}" at truecenter with dissolve
     pause 1.0
     scene bg black with Dissolve(0.5)
 
     # start
-    scene bg otherworld with fade
+    scene bg otherworld with dissolve
     "觸目便是一片鮮紅，我愣了一下才意識到這鮮豔的顏色來自頭頂的天空。"
     u "這裡就是康切爾托啊……"
 
@@ -95,7 +95,7 @@ label sky:
         "必須再寫得更快一點。"
         "再快一點。"
         "再快。"
-        scene bg otherworld with fade
+        scene bg otherworld with dissolve
         u "………啊，結束了。"
         "我回過神來，天空已經恢復成原先的血紅色。，彷彿之前什麼都沒發生過，唯一能證明剛才的經歷的只剩下我身周圍繞成一圈、密密麻麻的奇怪符號。"
         u "先把所有東西都記下來吧，接著統計各個符文組合出現次數，然後再跟現存字彙的出現次數進行比對，要做的事情還有很多呢……"
@@ -181,7 +181,7 @@ label ch2_1:
         scene bg code with dissolve
         "其後所揭露出來的「真實的天空」，是一片純粹、無盡的黑。\n儘管整個過程只持續了幾秒，但那空洞的顏色仍帶給我極大的震撼。"
         "他等我消化完一切後重新開口。"
-        scene bg otherworld with fade
+        scene bg otherworld with dissolve
         show mowu with dissolve
     m "康切爾托曾經被過多的生命佔據，使這個世界無力負擔這龐大的情感、思緒與生命現象，開始崩毀。天空的異象，還有你遇到的分割的手，都是世界崩壞的結果，絕非康切爾托原本應有的景象。"
     m "而此地，我們稱為「大地的基準」，也是異象之一。原本只是一個無法觸及的概念，但在世界開始崩毀後，它成為真實的存在，囚禁了所有觸碰到它的生命。在無時無刻的「刷新」之下失去自我的認知，成為大地的基準的一部分。"

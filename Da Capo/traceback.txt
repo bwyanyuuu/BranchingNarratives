@@ -1,22 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/ch0.rpy", line 13, in script
-    nvl_narrator "{a=http://139.162.117.77/mediawiki/index.php/%E6%AD%90%E5%85%8B%E9%87%8C%E6%96%AF%E5%A4%A7%E9%99%B8}歐克里斯{/a}，我出生以來生活的世界。"
-TypeError: a float is required
+  File "game/ch1.rpy", line 70, in script
+    show cello eye with fade(0.2, 0.0, 0.8, color="#fff")
+  File "game/ch1.rpy", line 70, in <module>
+    show cello eye with fade(0.2, 0.0, 0.8, color="#fff")
+TypeError: Fade() got multiple values for keyword argument 'color'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/ch0.rpy", line 13, in script
-    nvl_narrator "{a=http://139.162.117.77/mediawiki/index.php/%E6%AD%90%E5%85%8B%E9%87%8C%E6%96%AF%E5%A4%A7%E9%99%B8}歐克里斯{/a}，我出生以來生活的世界。"
-  File "renpy/ast.py", line 721, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "renpy/exports.py", line 1408, in say
-    what = what % tag_quoting_dict
-TypeError: a float is required
+  File "game/ch1.rpy", line 70, in script
+    show cello eye with fade(0.2, 0.0, 0.8, color="#fff")
+  File "renpy/ast.py", line 1439, in execute
+    paired = renpy.python.py_eval(self.paired)
+  File "renpy/python.py", line 2276, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "renpy/python.py", line 2269, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/ch1.rpy", line 70, in <module>
+    show cello eye with fade(0.2, 0.0, 0.8, color="#fff")
+  File "renpy/curry.py", line 48, in __call__
+    return self.callable(*(self.args + args), **merged_kwargs)
+TypeError: Fade() got multiple values for keyword argument 'color'
 
 Windows-10-10.0.19041
 Ren'Py 7.4.11.2266
 Da Capo 1.0
-Wed Jan  5 10:49:41 2022
+Wed Jan  5 19:15:31 2022
