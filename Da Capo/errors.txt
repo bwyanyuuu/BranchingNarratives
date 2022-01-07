@@ -2,9 +2,11 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 8: expected statement.
-    defune qc = Character("??")   
-              ^
+The label ch5 is defined twice, at File "game/ch4.rpy", line 1:
+call ch5_0 from ch5
+and File "game/script.rpy", line 3:
+call ch5_0 from ch5
+
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Tue Jan  4 16:15:34 2022
+Fri Jan  7 22:22:55 2022

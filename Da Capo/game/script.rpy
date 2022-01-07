@@ -14,6 +14,8 @@ define shf = Character("雙胞胎女", image = "shf")
 define n = Character("尼爾")
 define s = Character("桑杰斯")
 define m = Character("???", image = "mowu")
+define v = Character("村民")
+
 
 # images
 image hand = "hand injury.png"
@@ -65,5 +67,6 @@ label start:
     image side college = "[img_scoll]"
 
     jump ch0_0
+    
 
    

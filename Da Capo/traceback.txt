@@ -1,30 +1,34 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/ch1.rpy", line 70, in script
-    show cello eye with fade(0.2, 0.0, 0.8, color="#fff")
-  File "game/ch1.rpy", line 70, in <module>
-    show cello eye with fade(0.2, 0.0, 0.8, color="#fff")
-TypeError: Fade() got multiple values for keyword argument 'color'
+  File "game/ch5.rpy", line 30, in script
+    "離開[草原]，我開始朝著山坡前進。"
+KeyError: u'\u8349\u539f'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/ch1.rpy", line 70, in script
-    show cello eye with fade(0.2, 0.0, 0.8, color="#fff")
-  File "renpy/ast.py", line 1439, in execute
-    paired = renpy.python.py_eval(self.paired)
-  File "renpy/python.py", line 2276, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "renpy/python.py", line 2269, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/ch1.rpy", line 70, in <module>
-    show cello eye with fade(0.2, 0.0, 0.8, color="#fff")
-  File "renpy/curry.py", line 48, in __call__
-    return self.callable(*(self.args + args), **merged_kwargs)
-TypeError: Fade() got multiple values for keyword argument 'color'
+  File "game/ch5.rpy", line 30, in script
+    "離開[草原]，我開始朝著山坡前進。"
+  File "renpy/ast.py", line 721, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "renpy/exports.py", line 1419, in say
+    who(what, *args, **kwargs)
+  File "renpy/character.py", line 1236, in __call__
+    what = self.prefix_suffix("what", self.what_prefix, what, self.what_suffix)
+  File "renpy/character.py", line 1155, in prefix_suffix
+    return (sub(prefix) + sub(body) + sub(suffix))
+  File "renpy/character.py", line 1135, in sub
+    return renpy.substitutions.substitute(s, scope=scope, force=force, translate=translate)[0]
+  File "renpy/substitutions.py", line 270, in substitute
+    s = formatter.vformat(s, (), kwargs)
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 563, in vformat
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 585, in _vformat
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 646, in get_field
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 605, in get_value
+KeyError: u'\u8349\u539f'
 
 Windows-10-10.0.19041
 Ren'Py 7.4.11.2266
 Da Capo 1.0
-Wed Jan  5 19:15:31 2022
+Fri Jan  7 22:25:18 2022
