@@ -6,7 +6,7 @@ label ch0_0:
     show text "{size=+36}{font=temingti.ttf}序章{/font}{/size}" at truecenter with dissolve
     pause 1.0
     scene bg black with Dissolve(0.5)
-    
+
     # start
     scene bg laboratory with dissolve
 

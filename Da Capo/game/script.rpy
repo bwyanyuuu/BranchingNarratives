@@ -32,8 +32,7 @@ default img_scoll = ""
 
 # The game starts here.
 label start:
-    scene bg star
-
+    scene bg star with dissolve
     # username
     python:
         username = renpy.input("你的名字是什麼？", length=32)
@@ -42,8 +41,6 @@ label start:
         while not username:
             username = renpy.input("麻煩請輸入你的名字！", length=32)
             username = username.strip()
-
-    # u "我的名字是 [username]!"
 
     # select gender
     menu gender:
@@ -66,7 +63,6 @@ label start:
     image side user = "[img_susr]"
     image college = "[img_coll]"
     image side college = "[img_scoll]"
-    
 
     jump ch0_0
 
