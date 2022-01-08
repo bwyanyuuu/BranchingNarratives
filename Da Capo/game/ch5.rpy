@@ -5,15 +5,15 @@ default hill_cnt = 0
 default grass_cnt = 0
 default village_cnt = 0
 
-default p_flower = "花朵"
-default p_hill = "山坡"
-default p_magic = "魔法"
-default p_grass = "草原"
-default p_village = "村莊"
-default p_bird = "鳥鳴"
-default p_butterfly = "蝴蝶"
-default p_squirrel = "松鼠"
-default p_villagers = "村民"
+default l_hill = "{a=jump:hill}{color=#ffffff}山坡{/color}{/a}"
+default l_grass = "{a=jump:grass}{color=#ffffff}草原{/color}{/a}"
+default l_village = "{a=jump:village}{color=#ffffff}村莊{/color}{/a}"
+default l_villagers = "{a=jump:villagers}{color=#ffffff}村民{/color}{/a}"
+default l_flower = "{a=jump:flower}{color=#ffffff}花朵{/color}{/a}"
+default l_squirrel = "{a=jump:squirrel}{color=#ffffff}松鼠{/color}{/a}"
+default l_bird = "{a=jump:bird}{color=#ffffff}鳥鳴{/color}{/a}"
+default l_butterfly = "{a=jump:butterfly}{color=#ffffff}蝴蝶{/color}{/a}"
+default l_magic = "{a=jump:magic}{color=#ffffff}魔法{/color}{/a}"
 
 label ch5_0:
     # chapter transition
@@ -28,25 +28,26 @@ label ch5_0:
     "映入眼簾的是一片藍天，幾朵白雲點綴其上。輕柔的微風拂過草地，我身周的草葉被帶得搖擺起來，輕輕搔著我的臉頰。"
     u "唔…好痛！"
     "我似乎躺在地上，當我試著坐起來，身上的傷口被牽動，發出一陣陣刺痛。\n最後，等到我掙扎著爬起來時，已經是十幾分鐘後了。"
-    return
-#     jump repeat
+    # return
+    jump repeat
 
-# label repeat:
-#     "我環顧四周，這裡是一片草原，幾朵淺色的{a=jump:flower}{color=#ffffff}[p_flower]{/color}{/a}點綴其間，不遠處可以看見幾座{a=jump:hill}{color=#ffffff}[p_hill]{/color}{/a}佇立，儼然一副祥和景象。滿身灰塵與血汙的我顯得格格不入。"
-#     "或是，異常的不是我，而是這個地方。\n如果最後的時間回溯[p_magic]釋放成功的話，這裡應該就是時間斷崖了。"
+label repeat:
+    "我環顧四周，這裡是一片草原，幾朵淺色的[l_flower]點綴其間，不遠處可以看見幾座[l_hil]佇立，儼然一副祥和景象。滿身灰塵與血汙的我顯得格格不入。"
+    "或是，異常的不是我，而是這個地方。\n如果最後的時間回溯[l_magic]釋放成功的話，這裡應該就是時間斷崖了。"
 
 #     jump hill
+    return
 
 # label hill:
 #     $ action += 1
-#     "離開{a=jump:grass}{color=#ffffff}[p_grass]{/color}{/a}，我開始朝著山坡前進。"
+#     "離開[l_grass]，我開始朝著山坡前進。"
 #     #if(在本次迴圈第一次觸發){
 #     "路途中沒有地裂，也沒有巨型龍捲風，一切都平靜得不可思議，但總有種不安的感覺縈繞在我心頭。"
 #     u "完了，這一趟時間旅行下來，我都搞出被害妄想症了。"
 #     "但隨後，我就搞清楚這不安的源頭。\n從我醒來開始，我沒有看到任何動物。耳邊的聲音只剩下我的腳步聲以及風吹過草地發出的沙沙聲，一切都顯得安靜過頭了。"
 #     #}else{
 #     "與最初的路程不同，這次一路上多了許多生氣。"
-#     "身周的樹枝深處偶爾能聽見幾聲{a=jump:bird}{color=#ffffff}[p_bird]{/color}{/a}，{a=jump:squirrel}{color=#ffffff}[p_squirrel]{/color}{/a}在樹上上竄下跳，{a=jump:butterfly}{color=#ffffff}[p_butterfly]{/color}{/a}在{a=jump:flower}{color=#ffffff}[p_flower]{/color}{/a}間飛舞著。"
+#     "身周的樹枝深處偶爾能聽見幾聲[l_bird]，[l_squirrel]在樹上上竄下跳，[l_butterfly]在[l_flower]間飛舞著。"
 #     "……一想到這些東西都是在一瞬間出現的，就令人不寒而慄。"
 #     #}
 #     #if(行動 == 5){
@@ -56,10 +57,10 @@ label ch5_0:
 #     "我沿著河道向源頭前進，但一直到溪流的發源地都絲毫不見流水的蹤影。"
 #     u "大概是像動物一樣，不久後就會出現了。\n如果見證到水出現的瞬間，或許能得到什麼線索。"
 #     "我開始耐心的等待。"
-#     "瞬時之間，一道水柱從溪流的源頭直直往頭頂的{a=jump:sky}{color=#ffffff}[p_sky]{/color}{/a}衝去……這樣描述也不太準確，因為那水柱更像是一道瀑布，一去不復返，再也沒有掉回地面上過。"
+#     "瞬時之間，一道水柱從溪流的源頭直直往頭頂的[l_sky]衝去……這樣描述也不太準確，因為那水柱更像是一道瀑布，一去不復返，再也沒有掉回地面上過。"
 #     "我試著往水柱的方向丟了幾件物品，所有東西都跟著水流一起直衝天際。"
 #     u "看來流水附近的重力場與周遭不同……"
-#     "或許可以乘著這道水柱飛上{a=jump:sky}{color=#ffffff}[p_sky]{/color}{/a}也說不定。"
+#     "或許可以乘著這道水柱飛上[l_sky]也說不定。"
 #     "說完，我自己都被這個突發奇想給逗笑了。畢竟我也沒什麼理由非要飛上空中不可。"
 #     "過了一會兒，那道瀑布「刷啦」的一聲落回河床，濺起的水花把包括我在內的所有東西都弄溼了。我又觀察了一下這汩汩流動的水，但現在它似乎就只是一條普通的小溪。"
 #     jump grass
@@ -79,10 +80,10 @@ label ch5_0:
 #     $ action += 1
 #     "我重新回到我醒來的草原。"
 #     #if(行動 == 5){
-#     "這時，{a=jump:hill}{color=#ffffff}[p_hill]{/color}{/a}的方向隱隱傳出奇怪的聲響，我往那個方向看去，只見一道水柱直直往天上衝去……這樣描述也不太準確，因為那水柱更像是一道瀑布，一去不復返，再也沒有掉回地面上過。"
+#     "這時，[l_hill]的方向隱隱傳出奇怪的聲響，我往那個方向看去，只見一道水柱直直往天上衝去……這樣描述也不太準確，因為那水柱更像是一道瀑布，一去不復返，再也沒有掉回地面上過。"
 #     "這樣的奇景僅僅持續一會兒便消失蹤跡，我只得將注意力重新放回草原。"
 #     #}
-#     "幾朵淺色的{a=jump:flower}{color=#ffffff}[p_flower]{/color}{/a}點綴其間，{a=jump:butterfly}{color=#ffffff}[p_butterfly]{/color}{/a}圍繞著{a=jump:flower}{color=#ffffff}[p_flower]{/color}{/a}飛舞，不遠處可以看見幾座{a=jump:hill}{color=#ffffff}[p_hill]{/color}{/a}佇立，在山坡的相反方向，一座{a=jump:village}{color=#ffffff}[p_village]{/color}{/a}似乎正從這樣祥和的景象中甦醒，漸漸傳出人聲。"
+#     "幾朵淺色的[l_flower]點綴其間，[l_butterfly]圍繞著[l_flower]飛舞，不遠處可以看見幾座[l_hill]佇立，在山坡的相反方向，一座[l_village]似乎正從這樣祥和的景象中甦醒，漸漸傳出人聲。"
 
 # label village:
 #     $ action += 1
@@ -92,7 +93,7 @@ label ch5_0:
 #     "這時，山坡的方向隱隱傳出奇怪的聲響，我往那個方向看去，只見一道水柱直直往天上衝去……這樣描述也不太準確，因為那水柱更像是一道瀑布，一去不復返，再也沒有掉回地面上過。"
 #     "這樣的奇景僅僅持續一會兒便消失蹤跡，我只得將注意力重新放回眼前的村莊裡。"
 #     #}
-#     "這個的建築物只有幾間簡陋的木造小屋，一些{a=jump:villagers}{color=#ffffff}[p_villagers]{/color}{/a}在屋子那兒忙進忙出。"
+#     "這個的建築物只有幾間簡陋的木造小屋，一些[l_villagers]在屋子那兒忙進忙出。"
 #     jump grass
 
 # label villagers:
@@ -105,23 +106,23 @@ label ch5_0:
 #     "如果能到達天空中的話……！"
 #     "我震驚於自己這個瘋狂的想法，但無法控制思緒沿著這條道路奔馳而去。我甚至忘了村民之後說了什麼，只想著該怎麼到天上去。"
 #     "我大概是瘋了。"
-#     $ p_villagers = "■■"
+#     $ l_villagers = "■■"
 #     jump repeat
 
 # label flower:
 #     "在任何時代都隨處可見的五瓣小花。"
-#     $ p_flower = "■■"
+#     $ l_flower = "花朵"
 #     jump repeat
 
 # label squirrel:
 #     "怕生的小動物，一旦接近就會飛快跑走"
-#     $ p_squirrel = "■■"
+#     $ l_squirrel = "■■"
 #     jump repeat
 
 # label bird:
 #     "有著不同的音高與持續時間。"
 #     "……並沒有暗號藏在裡頭。"
-#     $ p_bird = "■■"
+#     $ l_bird = "■■"
 #     jump repeat
 
 # label butterfly:
@@ -129,14 +130,14 @@ label ch5_0:
 #     "我重新看向那些數量不少的蝴蝶。"
 #     u "這個數量，根本不可能是相約一起飛來這裡的吧。看起來更像是憑空出現的……"
 #     u "這就是你說的世界的破綻……"
-#     $ p_butterfly = "■■"
+#     $ l_butterfly = "■■"
 #     jump repeat
 
 # label magic:
 #     "雖然心中已有定論，但為了保險起見，我還是將手按在草地上，試著進行諾特組成分析。"
 #     u "唉，果然是「這裡不存在物體」嗎……"
 #     "我又試著釋放各式種類的魔法，無一例外全數失敗。我甚至無法感受到諾特的存在，更不要說調動它們了。"
-#     $ p_magic = "■■"
+#     $ l_magic = "■■"
 #     jump repeat
 
 # label sky:
