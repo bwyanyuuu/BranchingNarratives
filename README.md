@@ -1,23 +1,23 @@
-# Da Cappo
+# Da Capo
 ## Link
 + Game: http://139.162.117.77/
 + MediaWiki: http://139.162.117.77/mediawiki
 
 ## Introduction
-本多線互動遊戲「Da Cappo」是由 renpy 來製作，為 Python 的一個 library。  
-This branching narratives game "Da Cappo" is made by renpy which is a library based on Python. 
+本多線互動遊戲「Da Capo」是由 renpy 來製作，為 Python 的一個 library。  
+This branching narratives game "Da Capo" is made by renpy which is a library based on Python. 
 
 ## Tutorial
 請勿直接下載 html 原始擋下來本地遊玩，因為他還需要網頁伺服器才有辦法運行，請直接連線到上方的網址遊玩即可。  
-You are not availabe to download the source html files and play it at local because it needs to set up a http server to run the files. Please just visit the link above to play. Thank you!
+You are not available to download the source html files and play it at local because it needs to set up a http server to run the files. Please just visit the link above to play. Thank you!
 
 ## Index
-Da Cappo/  
+Da Capo/  
 　　|-- renpy 程式碼  
 DaCapo-1.0-dists/  
 　　|-- renpy 輸出的 web 檔案  
 document/  
 　　|-- 創作計劃書.md  
-　　|-- discussion.md  
+　　|-- discussion.md : 討論紀錄  
 psd/  
 　　|-- 修圖資料檔  
