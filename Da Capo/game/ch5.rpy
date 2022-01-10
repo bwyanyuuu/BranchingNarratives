@@ -1,4 +1,5 @@
 call chend_0 from chend
+# call ch6_0 from ch6
 default while_cnt = 0
 default action = 0
 default hill_cnt = 0
@@ -34,6 +35,7 @@ label ch5_0:
 label repeat:
     "我環顧四周，這裡是一片草原，幾朵淺色的[l_flower]點綴其間，不遠處可以看見幾座[l_hil]佇立，儼然一副祥和景象。滿身灰塵與血汙的我顯得格格不入。"
     "或是，異常的不是我，而是這個地方。\n如果最後的時間回溯[l_magic]釋放成功的話，這裡應該就是時間斷崖了。"
+    jump ch6_0
 
 #     jump hill
     return

@@ -1,5 +1,6 @@
 ﻿# import labels
-call ch0_0 from ch0
+# call ch0_0 from ch0
+call ch6_0 from ch6
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 # define chapter = Character(None, window_xalign=0.5, what_text_align=0.5,  text_xpos=0.5)
@@ -66,7 +67,7 @@ label start:
     image college = "[img_coll]"
     image side college = "[img_scoll]"
 
-    jump ch0_0
+    jump ch6_0
     
 
    

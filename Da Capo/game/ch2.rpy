@@ -4,6 +4,7 @@ default sky_cnt = 0
 default stone_cnt = 0
 default surface_cnt = 0
 default heal_cnt = 0
+default hasHint = False
 
 # $ sky_cnt = 0
 
@@ -105,6 +106,7 @@ label sky:
         nvl_narrator "好了，就先這樣吧。"
         nvl clear
         "我在用來記錄時間回溯詳細過程的筆記本重重畫上最後一串符文，「error」，確認沒有任何遺漏後才闔上筆記本。"
+        $ hasHint = True
         jump choose
     else:
         "我不適的移開視線。"

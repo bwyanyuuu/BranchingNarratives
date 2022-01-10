@@ -2,11 +2,9 @@
 errors listed below, and try again.
 
 
-The label ch5 is defined twice, at File "game/ch4.rpy", line 1:
-call ch5_0 from ch5
-and File "game/script.rpy", line 3:
-call ch5_0 from ch5
-
+File "game/ch6.rpy", line 108: else clause expects a non-empty block.
+    else: 
+          ^
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Fri Jan  7 22:22:55 2022
+Mon Jan 10 22:59:02 2022
