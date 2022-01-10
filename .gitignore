@@ -1,1 +1,4 @@
 *.rpyc
+*.save
+*.rpymc
+*.rpyb
