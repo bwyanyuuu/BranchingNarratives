@@ -53,7 +53,7 @@ label start:
             $ img_coll = "male1.png"
             $ img_scoll = "side male1.png"
             $ college = "艾弗利"
-
+    "溫馨提醒：\n在選擇之前為保險起見，請記得存檔喔ヾ(≧▽≦*)o"
     # init after gender selected
     image user = "[img_usr]"
     image side user = "[img_susr]"
