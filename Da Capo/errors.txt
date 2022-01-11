@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/ch6.rpy", line 108: else clause expects a non-empty block.
-    else: 
-          ^
+File "game/screens.rpy", line 1539: invalid syntax
+        elif target.startswith("https://")
+    
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Mon Jan 10 22:59:02 2022
+Wed Jan 12 00:24:50 2022

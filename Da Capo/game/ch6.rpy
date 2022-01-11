@@ -9,14 +9,16 @@ label ch6_0:
     show text "{size=+36}{font=temingti.ttf}終章{/font}{/size}" at truecenter with dissolve
     pause 1.0
     scene bg black with Dissolve(0.5)
+    scene bg white with dissolve
 
     # start
-    $ hasHint = True
     u "但這裡......？"
     "時間斷崖是歐克里斯的盡頭，而這裡是時間斷崖的盡頭......\n這裡是一片虛無，沒有聲音、映入眼簾的是一片白色，也不知我否是漂浮著，但我確實能踩著往前走。"
     "對現在我要往何處去，一點頭緒也沒有，這裡沒有方向可言，而且現在我也還在這盡頭的衝擊下，茫茫的不知所措。\n水流向天空什麼的，看起已經那麼的不可思議，沒想到這水的盡頭還有另一番天地。"
     "但是這的確是人型魔物所謂的那個「打破」，我打破了天空，脫離出了時間斷崖。\n每一次場景的重複，就是所謂的「刷新」，而現在我所在的空間，難道就是造物主之地？ (暫且認為是資料夾../)"
-    show bg black with Fade(0.2, 0.0, 0.8, color="#fff")
+    scene bg mystery
+    pause 1.0
+    scene bg white
     "忽然這片白色一閃，那些奇怪的符號又出現在我的眼前，我馬上仔細地端詳著。\n但是僅僅一瞬，又變回了一片白色。"
     u "這到底是......."
     "徬徨了一會兒我終於回過神來，忽然覺得剛剛的那些符號們好像有點似曾相識？"

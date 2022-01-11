@@ -16,7 +16,7 @@ label end2_0:
     show text "{size=+16}{font=temingti.ttf}Enter{/font}{/size}" at truecenter with dissolve
     pause 2.0
     hide text with dissolve
-    show text "{size=+32}{font=temingti.ttf}Ctrl + S{/font}{/size}" at truecenter with dissolve
+    show text "{size=+16}{font=temingti.ttf}Ctrl + S{/font}{/size}" at truecenter with dissolve
     pause 2.0
     hide text with dissolve
     pause 5.0

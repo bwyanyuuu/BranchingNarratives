@@ -1,9 +1,6 @@
 ﻿# import labels
-# call ch0_0 from ch0
-call ch6_0 from ch6
-# Declare characters used by this game. The color argument colorizes the
-# name of the character.
-# define chapter = Character(None, window_xalign=0.5, what_text_align=0.5,  text_xpos=0.5)
+call ch0_0 from ch0
+# call ch5_0 from ch5
 
 define q = Character("???")     #第二章不知名魔物
 define qc = Character("???")   #第一章切羅出登場
@@ -22,12 +19,6 @@ define st = Character("???", image = "st")
 
 # images
 image hand = "hand injury.png"
-
-# side images
-# image side cello = "side cello.png"
-# image side cello eye = "side cello eye.png"
-# image side shm = "side shm.png"
-# image side shf = "side shf.png"
 
 # user define variables
 default img_usr = ""
@@ -69,7 +60,7 @@ label start:
     image college = "[img_coll]"
     image side college = "[img_scoll]"
 
-    jump ch6_0
+    jump ch0_0
     
 
    

@@ -1,5 +1,6 @@
 label end3_0:
     # animation
+    scene bg mystery with ImageDissolve("imagedissolve teleport.png", 1.0, 0)
     "原本擋在我面前的透明屏障突然消失，我一頭撞進了未知的空間。"
     u "哇嗚！！\n這.....這裡是哪裡？"
     "一片漆黑的空間中，那些奇怪的符號在空中如同星辰般閃爍著。\n但是和之前見到的有不同之處，每個奇怪符號組成的區塊底下都寫著一行歐克里斯的文字。"

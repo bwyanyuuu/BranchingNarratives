@@ -1525,3 +1525,21 @@ transform halfleft:
 
 transform halfright:
     xalign 0.90 yalign 1.0
+
+init python:
+    style.http_noUnderline = Style(style.hyperlink_text)
+    style.http_noUnderline.color = "#FFFFFF"
+    style.http_noUnderline.hover_underline = False
+
+    style.http_hyperlink = Style(style.hyperlink_text)
+    style.http_hyperlink.color = "#FFFFFF"
+
+    def hyperlink_styler(target):
+        if target == "jump:sky":
+            return style.http_noUnderline
+        elif target.startswith("https://"):
+            return style.hyperlink_text
+        else:
+            return style.http_hyperlink
+
+    style.default.hyperlink_functions = (hyperlink_styler, style.default.hyperlink_functions[1], None)
