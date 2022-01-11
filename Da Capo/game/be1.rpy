@@ -33,7 +33,7 @@ label be1_0:
     "......\n或許是這樣吧？在被完全吞噬前的那一刻，我這麼想著......。"
 
     scene bg black with dissolve
-    show text "{size=+30}{font=temingti.ttf}BAB END{/font}{/size}" at truecenter with dissolve
+    show text "{size=+36}{font=temingti.ttf}BAB END{/font}{/size}" at truecenter with dissolve
     pause 1.0
     scene bg black with Dissolve(0.5)
 

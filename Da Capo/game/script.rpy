@@ -16,6 +16,8 @@ define n = Character("尼爾")
 define s = Character("桑杰斯")
 define m = Character("???", image = "mowu")
 define v = Character("村民")
+define st = Character("???", image = "st")
+
 
 
 # images

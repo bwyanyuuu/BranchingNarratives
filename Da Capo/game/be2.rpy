@@ -29,7 +29,7 @@ label be2_0:
     "然而我逐漸消失在黑暗裡......。"
 
     scene bg black with dissolve
-    show text "{size=+30}{font=temingti.ttf}BAD END{/font}{/size}" at truecenter with dissolve
+    show text "{size=+36}{font=temingti.ttf}BAD END{/font}{/size}" at truecenter with dissolve
     pause 1.0
     scene bg black with Dissolve(0.5)
 
