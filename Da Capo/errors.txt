@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 1539: invalid syntax
-        elif target.startswith("https://")
-    
+File "game/ch5.rpy", line 81: expected statement.
+    c
+     ^
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Wed Jan 12 00:24:50 2022
+Wed Jan 12 12:27:29 2022

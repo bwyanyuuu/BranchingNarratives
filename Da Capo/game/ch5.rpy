@@ -58,6 +58,7 @@ label hill:
     $ last = "hill"
     $ hill_cnt += 1
 
+    scene bg hill with dissolve
     "離開[grass]，我開始朝著山坡前進。"
     #if(在本次迴圈第一次觸發){
     if hill_cnt == 1:
@@ -77,6 +78,7 @@ label hill:
         "我沿著河道向源頭前進，但一直到溪流的發源地都絲毫不見流水的蹤影。"
         u "大概是像動物一樣，不久後就會出現了。\n如果見證到水出現的瞬間，或許能得到什麼線索。"
         "我開始耐心的等待。"
+        scene bg waterfall with dissolve
         "瞬時之間，一道水柱從溪流的源頭直直往頭頂的[skyy]衝去……這樣描述也不太準確，因為那水柱更像是一道瀑布，一去不復返，再也沒有掉回地面上過。"
         "我試著往水柱的方向丟了幾件物品，所有東西都跟著水流一起直衝天際。"
         u "看來流水附近的重力場與周遭不同……"
@@ -115,10 +117,13 @@ label grass:
         scene bg 
 
     $ last = "grass"
+    scene bg grass with dissolve
     "我重新回到我醒來的草原。"
     if action_cnt == 4:
+        scene bg waterfall with dissolve
         "這時，[hill]的方向隱隱傳出奇怪的聲響，我往那個方向看去，只見一道水柱直直往天上衝去……這樣描述也不太準確，因為那水柱更像是一道瀑布，一去不復返，再也沒有掉回地面上過。"
         "這樣的奇景僅僅持續一會兒便消失蹤跡，我只得將注意力重新放回草原。"
+        scene bg grass with dissolve
 
     "幾朵淺色的[flower]點綴其間，[butterfly]圍繞著[flower]飛舞，不遠處可以看見幾座[hill]佇立，在山坡的相反方向，一座[village]似乎正從這樣祥和的景象中甦醒，漸漸傳出人聲。"
 
@@ -145,12 +150,14 @@ label village:
         scene bg 
     
     $ last = "village"
+    scene bg village with dissolve
     u "之前並沒有這座村莊的……算了，在時間斷崖發生什麼都有可能。\n不管怎樣，先去那邊探探情況吧。"
     "我向那座村莊走去，想著或許能從村民口中問出什麼。"
     if action_cnt == 4:
+        scene bg waterfall with dissolve
         "這時，山坡的方向隱隱傳出奇怪的聲響，我往那個方向看去，只見一道水柱直直往天上衝去……這樣描述也不太準確，因為那水柱更像是一道瀑布，一去不復返，再也沒有掉回地面上過。"
         "這樣的奇景僅僅持續一會兒便消失蹤跡，我只得將注意力重新放回眼前的村莊裡。"
-
+        scene bg village with dissolve
     "這個的建築物只有幾間簡陋的木造小屋，一些[villagers]在屋子那兒忙進忙出。"
     jump hill
 
@@ -211,7 +218,8 @@ label magic:
     
     jump expression last
 
-label sky:        
+label sky:     
+    scene bg waterfall with dissolve
     "我抬頭看了看水柱的盡頭，緊張的咽了一口口水。\n一旦推測出了問題那就是死無全屍，但這是目前最有可能的答案。"
     "而且我也不清楚我還剩下多少時間。會不會下一秒就失去對自我的認知，被這個時間斷崖吞噬。"
     "我——"
