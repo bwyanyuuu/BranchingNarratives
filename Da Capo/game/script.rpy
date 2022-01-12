@@ -14,7 +14,7 @@ define s = Character("桑杰斯", image = "ss")
 define m = Character("???", image = "mowu")
 define v = Character("???")
 define l = Character("???", image = "luren")
-define st = Character("???", image = "st")
+define st = Character("???", image = "student")
 
 
 
