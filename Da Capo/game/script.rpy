@@ -9,10 +9,11 @@ define coll = Character("[college]", image = "college")
 define c = Character("切羅", image = "cello")
 define shm = Character("雙胞胎男", image = "shm")
 define shf = Character("雙胞胎女", image = "shf")
-define n = Character("尼爾")
-define s = Character("桑杰斯")
+define n = Character("尼爾", image = "neo")
+define s = Character("桑杰斯", image = "ss")
 define m = Character("???", image = "mowu")
-define v = Character("村民")
+define v = Character("???")
+define l = Character("???", image = "luren")
 define st = Character("???", image = "st")
 
 
@@ -25,6 +26,7 @@ default img_usr = ""
 default img_susr = ""
 default img_coll = ""
 default img_scoll = ""
+default point = 0
 
 # The game starts here.
 label start:

@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/ch5.rpy", line 81: expected statement.
-    c
-     ^
+File "game/ch3.rpy", line 98: end of line expected.
+    show neo with dissolve at halfleft
+                           ^
+
+File "game/ch3.rpy", line 100: end of line expected.
+    show ss with dissolve at halfright
+                          ^
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Wed Jan 12 12:27:29 2022
+Wed Jan 12 23:04:52 2022
