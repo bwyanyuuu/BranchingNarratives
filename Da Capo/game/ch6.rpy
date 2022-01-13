@@ -78,10 +78,16 @@ label realWorld:
     menu:
         "我覺得---"
         "天崩地裂，覺得整個精神世界都要崩塌了。":
-            # 歐克里斯對她來說就是一個不小心還留存的存在，一個微不足道隨時都可以消滅的存在。
-            jump end2_0
+            $ point -= 3
+            
         "盡管如此，我還是希望歐克里斯好好地存在著。":
-            jump end1_0
+            $ point += 3
+            
+    if point >= 0:
+        jump end1_0
+        
+    else:
+        jump end2_0
 
 label origine1:
     "我想起我在康切爾托也看過這些，只是那時候的天空一閃即逝，只有稍稍瞥到一些部份而已。\n那些符號的出現的確非常的奇怪，就好像天空被撕開了然後將這些符號露出來一樣。"
@@ -120,6 +126,13 @@ label origineCont:
 
 label cont:
     if cnt == 2:
+        $ point += 3
+        
+    else:
+        $ point -= 3
+        
+    if point >= 0:
         jump end3_0
+
     else:
         jump end4_0
