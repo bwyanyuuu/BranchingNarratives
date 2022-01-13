@@ -168,7 +168,7 @@ label villagers:
     "我震驚於自己這個瘋狂的想法，但無法控制思緒沿著這條道路奔馳而去。我甚至忘了村民之後說了什麼，只想著該怎麼到天上去。"
     "我大概是瘋了。"
     
-    return
+    jump expression before
 
 label flower:
     "在任何時代都隨處可見的五瓣小花。"
