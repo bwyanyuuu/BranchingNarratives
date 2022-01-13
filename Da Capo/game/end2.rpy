@@ -31,5 +31,5 @@ label end2_0:
     show text "{size=+36}{font=temingti.ttf}END{/font}{/size}" at truecenter with dissolve
     pause 1.0
     scene bg black with Dissolve(0.5)
-
+    $ renpy.movie_cutscene("/audio/dacapo.webm")
     return

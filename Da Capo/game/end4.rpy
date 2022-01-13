@@ -37,4 +37,5 @@ label end4_0:
     pause 1.0
     scene bg black with Dissolve(0.5)
 
+    $ renpy.movie_cutscene("/audio/dacapo.webm")
     return
