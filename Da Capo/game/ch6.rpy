@@ -3,6 +3,14 @@ call end2_0 from end2
 call end3_0 from end3
 call end4_0 from end4
 default cnt = 0
+image credit = Text("{size=+8}故事文本\n\n\n\n\n\n\n\n\n\n張巧如\n\n序章 第三章 終章\nBE1 BE2 BE3\n\n\n\n\n陳書玟\n\n第一章 第四章 結局3 結局4\n\n\n\n\n陳昱喬\n\n第二章 第五章 結局1 結局2\n\n\n\n\n\n\n\n\n\n遊戲設計\n\n\n\n\n\n\n\n\n\n程式\n\n張巧如 陳書玟\n\n\n\n\n背景圖片\n\n陳書玟\n\n\n\n\n人物設計\n\n張巧如\n\n\n\n\n主視覺\n\n陳昱喬{/size}", text_align = 0.5)
+transform scroll:
+    xpos 0.37
+    ypos 1.0
+    linear 25.0 ypos -4.0
+transform copyright:
+    xpos 0.16
+    ypos 0.95
 label ch6_0:
     # chapter transition
     scene bg black with dissolve
@@ -15,7 +23,7 @@ label ch6_0:
     u "但這裡......？"
     "時間斷崖是歐克里斯的盡頭，而這裡是時間斷崖的盡頭......\n這裡是一片虛無，沒有聲音、映入眼簾的是一片白色，也不知我否是漂浮著，但我確實能踩著往前走。"
     "對現在我要往何處去，一點頭緒也沒有，這裡沒有方向可言，而且現在我也還在這盡頭的衝擊下，茫茫的不知所措。\n水流向天空什麼的，看起已經那麼的不可思議，沒想到這水的盡頭還有另一番天地。"
-    "但是這的確是人型魔物所謂的那個「打破」，我打破了天空，脫離出了時間斷崖。\n每一次場景的重複，就是所謂的「刷新」，而現在我所在的空間，難道就是造物主之地？ (暫且認為是資料夾../)"
+    "但是這的確是人型魔物所謂的那個「打破」，我打破了天空，脫離出了時間斷崖。\n每一次場景的重複，就是所謂的「刷新」，而現在我所在的空間，難道就是造物主之地？"
     scene bg mystery
     pause 1.0
     scene bg white
@@ -46,6 +54,10 @@ label realWorld:
     "我試著唸出那個亂碼，因為它太亂了，所以唸了好幾次才唸對，唸完之後才發現，那是歐克里斯裡的「墮落」的意思。"
     u "墮落......嗎？"
     "我要...怎麼墮落了？難道是要想辦法往下沉嗎？\n所以我用力地跳了起來，再狠狠地跳了下去，然後我就慢慢被白色吞沒了。"
+    scene bg black with ImageDissolve("imagedissolve teleport.png", 0.5, 0)
+    scene bg white with ImageDissolve("imagedissolve teleport.png", 0.5, 0)
+    scene bg black with ImageDissolve("imagedissolve teleport.png", 0.5, 0)
+    scene bg white with ImageDissolve("imagedissolve teleport.png", 0.5, 0)
     "接著是一陣暈眩，我眼前的白在不停地閃爍，刺激的我幾乎睜不開眼，整個人好像是被不停搖晃一般。"with hpunch
     scene bg lab with dissolve
     "過了一下子終於停了下來，暈暈呼呼的我睜開眼睛，我身處在一個奇怪的空間，這裡的一切看起來跟歐克里斯很不一樣，所有東西都沒有一條輪廓。"

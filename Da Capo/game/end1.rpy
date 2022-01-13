@@ -36,5 +36,12 @@ label end1_0:
     show text "{size=+36}{font=temingti.ttf}END{/font}{/size}" at truecenter with dissolve
     pause 1.0
     hide text with dissolve
-    $ renpy.movie_cutscene("/audio/dacapo.webm")
+
+    # credit screen
+    show credit at scroll
+    pause 25.0
+    show text "© 2020-2021「Da Capo」遊戲組製作" at copyright with dissolve
+    pause 2.0
+    hide text with dissolve
+
     return
