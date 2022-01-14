@@ -34,6 +34,7 @@ document/
 　　　　|-- 所有劇本的文字檔  
 　　|-- 創作計劃書.md  
 　　|-- discussion.md : 討論紀錄  
+　　|-- 多線期末報告.pdf   
 mediawiki/  
 　　|-- 所有mediawiki相關檔案  
 psd/  
