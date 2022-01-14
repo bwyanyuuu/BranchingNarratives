@@ -27,6 +27,8 @@ Da Capo/
 　　|-- renpy 程式碼  
 DaCapo-1.0-dists/  
 　　|-- renpy 輸出的 web 檔案  
+　　|-- renpy 輸出的 pc 檔案  
+　　|-- renpy 輸出的 mac 檔案  
 document/  
 　　|--scripts/  
 　　　　|-- 所有劇本的文字檔  
