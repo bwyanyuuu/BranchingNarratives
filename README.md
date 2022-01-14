@@ -26,16 +26,25 @@ You are not available to download the source html files and play it at local bec
 Da Capo/  
 　　|-- renpy 程式碼  
 DaCapo-1.0-dists/  
-　　|-- renpy 輸出的 web 檔案  
-　　|-- renpy 輸出的 pc 檔案  
-　　|-- renpy 輸出的 mac 檔案  
+　　|-- DaCapo-1.0-web/  
+　　　　|-- renpy 輸出的 web 檔案  
+　　|-- DaCapo-1.0-pc.zip：renpy 輸出的 pc 檔案  
+　　|-- DaCapo-1.0-mac.zip：renpy 輸出的 mac 檔案  
 document/  
 　　|--scripts/  
 　　　　|-- 所有劇本的文字檔  
 　　|-- 創作計劃書.md  
-　　|-- discussion.md : 討論紀錄  
+　　|-- 討論紀錄.md   
+　　|-- 分工表.md   
 　　|-- 多線期末報告.pdf   
 mediawiki/  
 　　|-- 所有mediawiki相關檔案  
-psd/  
-　　|-- 修圖資料檔  
+design/   
+　　|-- character/  
+　　　　|-- 角色圖片  
+　　|-- background/  
+　　　　|-- 背景圖片  
+　　|-- photoshop/  
+　　　　|-- 修圖檔案  
+　　|-- vroid/  
+　　　　|-- 建模軟體檔  
