@@ -1,7 +1,7 @@
 # Da Capo
 + Online Version: http://139.162.117.77/
-+ Windows / Linux Version: 
-+ Mac Version:
++ Windows / Linux Version: [click download](https://github.com/linxiii/BranchingNarratives/raw/main/DaCapo-1.0-dists/DaCapo-1.0-pc.zip)
++ Mac Version: [click download](https://github.com/linxiii/BranchingNarratives/raw/main/DaCapo-1.0-dists/DaCapo-1.0-mac.zip)
 + MediaWiki: http://139.162.117.77/mediawiki
 
 ## Introduction
