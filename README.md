@@ -31,7 +31,7 @@ DaCapo-1.0-dists/
 　　|-- DaCapo-1.0-pc.zip：renpy 輸出的 pc 檔案  
 　　|-- DaCapo-1.0-mac.zip：renpy 輸出的 mac 檔案  
 document/  
-　　|--scripts/  
+　　|-- scripts/  
 　　　　|-- 所有劇本的文字檔  
 　　|-- 創作計劃書.md  
 　　|-- 討論紀錄.md   
