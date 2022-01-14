@@ -58,7 +58,7 @@ label realWorld:
     scene bg white with ImageDissolve("imagedissolve teleport.png", 0.5, 0)
     scene bg black with ImageDissolve("imagedissolve teleport.png", 0.5, 0)
     scene bg white with ImageDissolve("imagedissolve teleport.png", 0.5, 0)
-    "接著是一陣暈眩，我眼前的白在不停地閃爍，刺激的我幾乎睜不開眼，整個人好像是被不停搖晃一般。"with hpunch
+    "接著是一陣暈眩，我眼前的白在不停地閃爍，刺激的我幾乎睜不開眼，整個人好像是被不停搖晃一般。" with hpunch
     scene bg lab with dissolve
     "過了一下子終於停了下來，暈暈呼呼的我睜開眼睛，我身處在一個奇怪的空間，這裡的一切看起來跟歐克里斯很不一樣，所有東西都沒有一條輪廓。"
     "我疑惑的看了看四周，這裡一個像生物的都沒有，倒是有各種再歐克里斯沒有見過的物品。\n環顧了一圈回到我前方，發現眼前是一個箱形物件，它以一個低頻率發出許多諾特，而且它是摺疊起來的，我忍不住將它打開來看。"

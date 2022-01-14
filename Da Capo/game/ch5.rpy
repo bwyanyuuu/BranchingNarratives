@@ -51,7 +51,7 @@ label begin:
     jump hill
 
 label hill:
-    if last.startswith("hill"):
+    if last != "hill":
         $ action_cnt += 1
         if action_cnt == 7:
             scene bg black with dissolve

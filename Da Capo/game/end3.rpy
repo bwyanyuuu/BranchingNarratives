@@ -26,7 +26,7 @@ label end3_0:
     # credit screen
     show credit at scroll
     pause 25.0
-    show text "© 2020-2021「Da Capo」遊戲組製作" at copyright with dissolve
+    show text "© 2021-2022「Da Capo」遊戲組製作" at copyright with dissolve
     pause 2.0
     hide text with dissolve
 
