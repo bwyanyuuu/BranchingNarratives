@@ -1,5 +1,7 @@
 # Da Capo
-+ Game: http://139.162.117.77/
++ Online Version: http://139.162.117.77/
++ Windows / Linux Version: 
++ Mac Version:
 + MediaWiki: http://139.162.117.77/mediawiki
 
 ## Introduction
@@ -11,8 +13,14 @@ This branching narratives game "Da Capo" is made by renpy which is a library bas
 這個世界的真相正等著被揭開。
 
 ## Tutorial
+### Online Version
 請勿直接下載 html 原始擋下來本地遊玩，因為他還需要網頁伺服器才有辦法運行，請直接連線到上方的網址遊玩即可。  
-You are not available to download the source html files and play it at local because it needs to set up a http server to run the files. Please just visit the link above to play. Thank you!
+You are not available to download the source html files and play it at local because it needs to set up a http server to run the files. Please just visit the link above to play. Thank you!  
+  
+目前網頁版不支持中文輸入，若有需要請下載PC版使用。  
+
+### PC Version
+點擊連結下載與解壓縮後，運行 "DaCapo.exe"  
 
 ## Index
 Da Capo/  
