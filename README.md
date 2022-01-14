@@ -23,7 +23,7 @@ document/
 　　|--scripts/  
 　　　　|-- 所有劇本的文字檔  
 　　|-- 創作計劃書.md  
-　　|-- discussion.md : 討論紀錄 
+　　|-- discussion.md : 討論紀錄  
 mediawiki/  
 　　|-- 所有mediawiki相關檔案  
 psd/  
